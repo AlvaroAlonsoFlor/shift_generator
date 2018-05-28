@@ -1,0 +1,1 @@
+require_relative 'shift_generator.rb'
