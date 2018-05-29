@@ -1,22 +1,28 @@
 class ShiftGen
+  attr_reader :shifts
 
   def initialize
-    @shifts = Array.new(7) {Array.new(4)}
+    @shifts = Array.new(4) {Array.new(7)}
     @options = ["E", "L"]
-    shifts.map! do |arr|
+    @shifts.map! do |arr|
       arr.map! do |element|
         @options[rand(0..1)]
       end
-      #Add days off random in each week
-      @shifts[arr][rand(0..6)] = "O"
-      #while only 1 "O" continuing putting "O", when 2, break
-      @counter = 0
-      arr.map! do |arr|
-        @counter += 1 if arr == "O"
-        
 
+      #REWORK NEEDED
+
+      #Add days off random in each week
+      #@shifts[arr][rand(0..6)] = "O"
+      #while only 1 "O" continuing putting "O", when 2, break
+      #arr.map! do |arr|
+        #@counter = 0
+        #while counter <= 2
+          #@counter += 1 if arr == "O"
+          #break
+        #end
+        
+      #END OF REWORK NEEDED
       end
     end
-
-
+  end
 end
