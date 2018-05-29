@@ -20,9 +20,9 @@ class ShiftGen
           #@counter += 1 if arr == "O"
           #break
         #end
-        
+
+      #end
       #END OF REWORK NEEDED
-      end
     end
   end
 end
