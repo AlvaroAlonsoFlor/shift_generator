@@ -14,4 +14,6 @@
 
 In the end starting to work with a class was easier since I had already part done from my world_generator project.
 
+The shift generator is now working offering basic functionalities. Still can be adapted to offer a flexible number of weeks and days off.
+
 # TL shift pattern
