@@ -17,3 +17,7 @@ In the end starting to work with a class was easier since I had already part don
 The shift generator is now working offering basic functionalities. Still can be adapted to offer a flexible number of weeks and days off.
 
 # TL shift pattern
+
+* Some ideas to review:
+  - 2 weekends a month off
+  - finishing with earlies starting with lates?
