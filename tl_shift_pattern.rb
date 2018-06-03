@@ -1,12 +1,15 @@
 
 require_relative("shift_generator") #Working
 
-new_shift = ShiftGen.new
+def create_shift #creating a shift
+  new_shift = ShiftGen.new.shifts
+end
 
-print new_shift.shifts
+def tl_filter(shift)
 
-def tl_filter
   #At least 2 weekends off
+  shift
+
   #starting with a late
   #finishing with early shift?
 end
