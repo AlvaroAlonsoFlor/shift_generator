@@ -12,10 +12,17 @@ class ShiftGen
 
     end
 
+
     for weeks in @shifts
-      2.times do #number of days off, with a var could be changed
-        weeks[rand(0..6)] = "O"
+      @rand1 = rand(0..6)
+      @rand2 = rand(0..6)
+      while @rand1 == @rand2
+        @rand2 = rand(0..6)
       end
+
+      weeks[@rand1] = "O"
+      weeks[@rand2] = "O"
+
     end
 
 
