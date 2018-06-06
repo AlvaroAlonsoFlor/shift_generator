@@ -14,6 +14,7 @@ def tl_filter(roster) #We'll pass create_shift
   #First day Monday last day Sunday
   #We need index 5 and 6 be off
   #weeks
+  two_weekends = false
 
   while two_weekends == false
     roster # We call the function or proc
@@ -35,30 +36,14 @@ def tl_filter(roster) #We'll pass create_shift
 
   end
 
+  return roster
+
+end
+
 binding.pry
 
-
-
-
-  #counter = 0
-  #for weeks in shifts
-    #if counter == 4
-      #return true
-    #end
-
-    #if counter != 2
-      #counter = 0
-    #end
-
-    #for days in weeks
-
-      #if shifts[weeks][0] || shifts[weeks][6] == "O"
-          #counter += 1
-
-      #end
-    #end
-  end
+tl_filter(create_shift)
+tl_filter(ShiftGen.new)
 
   #starting with a late
   #finishing with early shift?
-end
