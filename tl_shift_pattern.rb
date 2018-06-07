@@ -31,7 +31,8 @@ def tl_filter(roster) #We'll pass create_shift
     if weekends >= 2
       two_weekends = true
     else
-      roster # We call a different roster
+      puts "Roster not valid"
+      break
     end
 
   end
@@ -40,10 +41,10 @@ def tl_filter(roster) #We'll pass create_shift
 
 end
 
+tl_filter(create_shift)
+
 binding.pry
 
-tl_filter(create_shift)
-tl_filter(ShiftGen.new)
 
   #starting with a late
   #finishing with early shift?
