@@ -42,8 +42,6 @@ binding.pry
 
 tl_filter(good_shift)
 
-
-
 tl_filter(bad_shift)
 
 
