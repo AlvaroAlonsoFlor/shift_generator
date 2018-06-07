@@ -1,12 +1,7 @@
 
+require_relative("spec/roster_tests")
+
 require("pry-byebug")
-require_relative("shift_generator") #Working
-
-def create_shift #creating a shift, probably we'll need a proc
-  new_shift = ShiftGen.new.shifts
-end
-
-
 
 def tl_filter(roster) #We'll pass create_shift
 
@@ -44,6 +39,16 @@ end
 tl_filter(create_shift)
 
 binding.pry
+
+tl_filter(good_shift)
+
+
+
+tl_filter(bad_shift)
+
+
+
+
 
 
   #starting with a late
