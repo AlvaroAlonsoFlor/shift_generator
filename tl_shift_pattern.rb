@@ -28,7 +28,9 @@ def tl_filter(roster) #We'll pass create_shift
     else
       puts "Roster not valid"
       break
-      #instead of break final v would be with tl_filter(create_shift)
+      #tl_filter(create_shift) I get this error:
+      #stack level too deep (SystemStackError)
+      #due to too many attempts
     end
 
   end

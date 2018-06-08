@@ -28,3 +28,9 @@ class ShiftGen
 
   end
 end
+
+class ShiftBuilder
+  def initialize
+    @shifts = Array.new(4) {Array.new(7)}
+  end
+end
