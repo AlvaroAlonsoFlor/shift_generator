@@ -4,11 +4,12 @@ def create_shift #creating a shift, probably we'll need a proc
   new_shift = ShiftGen.new.shifts
 end
 
+#This tests work only at the pry console
 
-good_shift = [["E", "O", "E", "L", "L", "L", "O"],
- ["O", "E", "E", "L", "L", "E", "O"],
+good_shift = [["E", "E", "E", "L", "L", "O", "O"],
+ ["E", "E", "E", "L", "L", "O", "O"],
  ["O", "E", "L", "E", "O", "E", "E"],
- ["E", "L", "E", "E", "O", "O", "L"]]
+ ["E", "O", "E", "E", "O", "L", "L"]]
 
  bad_shift = [["L", "O", "L", "L", "O", "L", "E"],
  ["E", "O", "L", "E", "O", "E", "L"],

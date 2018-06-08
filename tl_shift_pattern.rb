@@ -28,6 +28,7 @@ def tl_filter(roster) #We'll pass create_shift
     else
       puts "Roster not valid"
       break
+      #instead of break final v would be with tl_filter(create_shift)
     end
 
   end
