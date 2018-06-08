@@ -16,6 +16,12 @@ In the end starting to work with a class was easier since I had already part don
 
 The shift generator is now working offering basic functionalities. Still can be adapted to offer a flexible number of weeks and days off.
 
+Now that is functional is time to think about refactoring it to make it more efficient. Using recursion will cause the following error:
+
+`` stack level too deep (SystemStackError) ``
+
+So, why not try to build shifts instead of generate them randomly?
+
 # TL shift pattern
 
 * Some ideas to review:
