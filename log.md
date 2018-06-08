@@ -19,7 +19,10 @@ The shift generator is now working offering basic functionalities. Still can be 
 # TL shift pattern
 
 * Some ideas to review:
-  - 2 weekends a month off.
+  - At least 2 weekends a month off.
   - finishing with earlies starting with lates?
-* Started to test with pry and pry-byebug.
-* I decided to put weeks Monday to Sunday instead of Sunday to Saturday since it will simplify the code.
+
+* Weekend filter:
+  - Started to test with pry and pry-byebug.
+  - I decided to put weeks Monday to Sunday instead of Sunday to Saturday since it will simplify the code.
+  - Weekend filter is now fully functional
