@@ -20,7 +20,7 @@ Now that is functional is time to think about refactoring it to make it more eff
 
 `` stack level too deep (SystemStackError) ``
 
-So, why not try to build shifts instead of generate them randomly?
+So, why not try to build shifts instead of generate them randomly? Finally I decided to fix the part that I have already built
 
 # TL shift pattern
 
@@ -31,4 +31,4 @@ So, why not try to build shifts instead of generate them randomly?
 * Weekend filter:
   - Started to test with pry and pry-byebug.
   - I decided to put weeks Monday to Sunday instead of Sunday to Saturday since it will simplify the code.
-  - Weekend filter is now fully functional
+  - Weekend filter testing in progress
