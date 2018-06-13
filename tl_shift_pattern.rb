@@ -3,61 +3,33 @@ require_relative("spec/roster_tests")
 
 require("pry-byebug")
 
-def tl_filter #We'll pass create_shift
+def tl_filter
 
-  #At least 2 weekends off
-  #First day Monday last day Sunday
-  #We need index 5 and 6 be off
-  #weeks
   new_shift = ShiftGen.new.shifts
 
-  two_weekends = false
+  weekends = 0
 
-  while two_weekends == false
+  for weeks in new_shift
 
-    weekends = 0
-
-    for weeks in new_shift
-
-      if weeks[5] == "O" && weeks[6] == "O"
-        weekends += 1
-      end
-
-    end
-
-    if weekends >= 2
-      two_weekends = true
-      puts "Roster found, #{weekends} weekends found"
-
-    else
-      puts "Roster not valid, just #{weekends} weekends"
-      tl_filter
-      break
-      #tl_filter(create_shift) Sometimes I get this error:
-      #stack level too deep (SystemStackError)
-      #due to too many attempts
+    if weeks[5] == "O" && weeks[6] == "O"
+      weekends += 1
     end
 
   end
 
-  return new_shift
+  if weekends >= 2
+
+    puts "Roster found, #{weekends} weekends found"
+    new_shift
+
+  else
+    puts "Roster not valid, #{weekends} weekends found"
+    tl_filter
+  end
+
 
 end
 
-tl_filter
-
 binding.pry
 
-#For the old method with parameters
-
-tl_filter(good_shift)
-
-tl_filter(bad_shift)
-
-
-
-
-
-
-  #starting with a late
-  #finishing with early shift?
+tl_filter

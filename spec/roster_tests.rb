@@ -1,6 +1,6 @@
 require_relative("../shift_generator")
 
-def create_shift #creating a shift, probably we'll need a proc
+def create_shift
   new_shift = ShiftGen.new.shifts
 end
 
